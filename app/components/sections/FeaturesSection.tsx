@@ -8,6 +8,7 @@ import { Subtitle } from "../ui/Subtitle"
 import { Title } from "../ui/Title"
 import { WorkflowMockup } from "../ui/Mockup/WorkflowMockup"
 import { IAMockup } from "../ui/Mockup/IAMockup"
+import { CompilanceMockup } from "../ui/Mockup/CompilanceMockup"
 
 export function FeatureSection() {
     
@@ -54,7 +55,7 @@ export function FeatureSection() {
                     title="Compliance LGPD"
                     description="Auditoria completa e segurança jurídica desde o dia zero."
                     isLarge={false}>
-                    <EditorMockup />
+                    <CompilanceMockup />
                 </CardFeature>       
             </div>
         </section>
