@@ -61,8 +61,8 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
         <Image
           src="/assets/logo.png"
           alt="Logo"
-          width={120}
-          height={120}
+          width={110}
+          height={110}
           className=""
         />
         <nav>

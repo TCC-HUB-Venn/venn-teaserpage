@@ -7,7 +7,7 @@ export const InitialSection = () => {
   return (
     <section
       id="initial"
-      className="relative flex items-center overflow-hidden pt-32 pb-20 px-4 sm:pt-40 sm:pb-24 sm:px-6 lg:pt-52 lg:pb-32 lg:px-8"
+      className="relative flex items-center overflow-hidden pt-32 pb-20 px-4 sm:pt-40 sm:pb-24 sm:px-6 lg:pt-64 lg:pb-32 lg:px-8"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center md:gap-10 lg:flex-row lg:items-center lg:gap-0 lg:pr-16">
         <motion.div
@@ -19,7 +19,7 @@ export const InitialSection = () => {
           }}
           className="relative z-10 order-1 w-full max-w-[610px] space-y-5 text-center lg:text-left"
         >
-          <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl mb-12">
             Orientar e escrever um TCC não precisa ser um pesadelo.
           </h1>
 
