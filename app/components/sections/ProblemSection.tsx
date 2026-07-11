@@ -25,7 +25,7 @@ export const ProblemSection = () => {
     ]
 
     return (
-        <section id='problem' className='max-w-5xl mx-auto py-24'>
+        <section id='problem' className='max-w-5xl mx-auto md:py-24 py-16 px-8'>
 
             <motion.div
                 initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
@@ -36,12 +36,12 @@ export const ProblemSection = () => {
             >
                 <Subtitle text='O PROBLEMA' color='text-[#FF6467]' isCenter={true} />
                 <Title text='A gestão atual de trabalhos acadêmicos está quebrada.' highlight='quebrada' />
-                <p className='text-center text-white/80'>E você já sentiu isso no dia a dia.</p>
+                <p className='lg:text-center text-white/80'>E você já sentiu isso no dia a dia.</p>
             </motion.div>
 
 
             <motion.div
-                className='grid grid-cols-3 gap-8 mt-28'
+                className='grid lg:grid-cols-3 gap-8 md:mt-28 mt-16'
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

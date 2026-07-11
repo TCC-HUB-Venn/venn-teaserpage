@@ -10,7 +10,7 @@ export const Subtitle = ({ text, color, isCenter = false }: SubtitleProps) => {
 
     return (
         <h3
-            className={` ${isCenter ? 'text-center' : 'text-left'} text-sm font-bold uppercase tracking-[1.65px] ${isTailwindClass ? color : ''}`}
+            className={`text-left ${isCenter ? 'md:text-center' : ''} text-sm font-bold uppercase tracking-[1.65px] ${isTailwindClass ? color : ''}`}
             style={!isTailwindClass ? { color } : undefined}
         >
             {text}

@@ -10,7 +10,7 @@ export const Title = ({ text, color = 'text-white', isCenter = false, highlight 
         const parts = text.split(highlight)
 
         return (
-            <h2 className={`text-4xl font-extrabold ${isCenter ? 'text-center' : 'text-left'} ${color}`}>
+            <h2 className={`md:text-4xl text-3xl font-extrabold text-left ${isCenter ? 'md:text-center' : ''} ${color}`}>
                 {parts[0]}
                 <span className='line-through px-2'>{highlight}</span>
                 {parts[1]}
@@ -19,7 +19,7 @@ export const Title = ({ text, color = 'text-white', isCenter = false, highlight 
     }
 
     return (
-        <h2 className={`text-4xl font-extrabold ${isCenter ? 'text-center' : 'text-left'} ${color}`}>
+        <h2 className={`md:text-4xl text-3xl font-extrabold text-left ${isCenter ? 'md:text-center' : ''} ${color}`}>
             {text}
         </h2>
     )
