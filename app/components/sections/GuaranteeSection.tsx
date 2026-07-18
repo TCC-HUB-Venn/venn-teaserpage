@@ -7,7 +7,7 @@ import { Title } from "../ui/Title"
 
 export const GuaranteeSection = () => {
     return (
-        <section id='guarantee' className='px-8 relative overflow-hidden border border-white/15 py-24 bg-[#2563EB]/8'>
+        <section id='guarantee' className='px-8 relative overflow-hidden border-y border-white/10 py-24 bg-[#2563EB]/8'>
             <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(37,99,235,0.12),transparent_30%)]' />
             <div className='pointer-events-none absolute -right-20 top-1/2 h-44 w-44 -translate-y-1/2 rounded-full bg-[#2563EB]/10 blur-3xl' />
             <div className='pointer-events-none absolute left-8 top-6 h-24 w-24 rounded-full bg-[#2563EB]/10 blur-2xl' />

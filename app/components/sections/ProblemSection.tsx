@@ -108,9 +108,10 @@ export const ProblemSection = () => {
 
                 <p>
                     <strong className='text-white/85'>
-                        O Venn substitui o Word, o WhatsApp e as planilhas do coordenador
+                        O Venn elimina a necessidade de múltiplos aplicativos para organizar, escrever e comunicar
+
                     </strong>{" "}
-                    em um único fluxo organizado. Do primeiro encontro à ata de defesa assinada.
+                    centralizando todo o fluxo do TCC em uma única plataforma inteligente.
                 </p>
             </motion.div>
 

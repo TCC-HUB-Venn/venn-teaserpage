@@ -7,7 +7,7 @@ export const InitialSection = () => {
   return (
     <section
       id="initial"
-      className="relative flex items-center overflow-hidden pt-32 pb-20 px-4 sm:pt-40 sm:pb-24 sm:px-6 lg:pt-64 lg:pb-32 lg:px-8"
+      className="relative flex items-center overflow-hidden pt-32 pb-16 px-4 sm:pt-40 sm:pb-20 sm:px-6 lg:pt-64 lg:pb-32 lg:px-8"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-col items-center md:gap-10 lg:flex-row lg:items-center lg:gap-0 lg:pr-16">
         <motion.div

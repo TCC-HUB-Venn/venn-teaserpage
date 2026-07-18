@@ -20,7 +20,7 @@ export function FeatureSection() {
                 whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className='xl:w-[380px] space-y-5 text-center max-xl:mb-10 w-1/2'
+                className='xl:w-[380px] space-y-5 text-center max-xl:mb-10 md:w-1/2'
             >
                 <Subtitle text='Funcionalidades' color='text-[#51A2FF]' />
                 <Title text='O que está por vir' isCenter={false}/>
