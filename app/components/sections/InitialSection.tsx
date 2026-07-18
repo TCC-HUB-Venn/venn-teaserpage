@@ -58,7 +58,6 @@ export const InitialSection = () => {
               alt="Initial Image"
               fill
               priority
-              quality={100}
               sizes="(max-width: 1023px) 95vw, 0vw"
               className="object-contain object-right"
             />
@@ -99,7 +98,6 @@ export const InitialSection = () => {
             alt="Initial Image"
             fill
             priority
-            quality={100}
             sizes="(min-width: 1024px) 44vw, 0vw"
             className="object-contain object-right"
           />

@@ -53,18 +53,19 @@ export const Navbar = () => {
     <>
       {/* ===== Navbar Desktop ===== */}
       <header
-        className="hidden md:flex items-center justify-center  rounded-full border border-white/15
-bg-[#0A0A0A]/30
-backdrop-blur-[24px]
-shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 left-0 right-0 backdrop-blur-3xl z-50 shadow-[0_0_30px_6px_rgba(37,99,235,0.10)] gap-16"
+        className="hidden md:flex items-center justify-center  rounded-full border border-white/10
+        bg-[#0A0A0A]/30
+        backdrop-blur-[24px]
+        shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-2 px-8 w-fit mx-auto mt-4 fixed top-0 left-0 right-0 backdrop-blur-3xl z-50 shadow-[0_0_30px_6px_rgba(37,99,235,0.10)] gap-16"
       >
-        <Image
-          src="/assets/logo.png"
-          alt="Logo"
-          width={110}
-          height={110}
-          className=""
-        />
+        <div className="relative w-[120px] h-[50px]">
+          <Image
+            src="/assets/logo.png"
+            alt="Logo"
+            fill
+            className="object-contain"
+          />
+        </div>
         <nav>
           <ul className="flex items-center justify-center gap-2 font-medium text-base">
             {sections.map((section) => {
@@ -74,11 +75,10 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
                 <li key={section.id}>
                   <Link
                     href={`#${section.id}`}
-                    className={`rounded-full px-4 py-3 transition-colors ${
-                      isActive
+                    className={`rounded-full px-4 py-3 transition-colors ${isActive
                         ? "bg-primary text-white"
                         : "text-white/80 hover:text-white"
-                    }`}
+                      }`}
                   >
                     {section.label}
                   </Link>
@@ -91,7 +91,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
 
       {/* ===== Navbar Mobile ===== */}
       <header className="flex md:hidden items-center justify-between rounded-full border border-white/10 bg-[#0A0A0A]/55 py-3 px-5 w-[92%] mx-auto mt-4 fixed top-0 left-0 right-0 backdrop-blur-3xl z-50 shadow-[0_0_30px_6px_rgba(37,99,235,0.10)]">
-        <Image src="/assets/logo.png" alt="Logo" width={90} height={90} />
+        <Image src="/assets/logo.png" alt="Logo" width={90} height={90} className='h-auto' />
 
         <button
           type="button"
@@ -106,20 +106,18 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
       {/* ===== Overlay ===== */}
       <div
         onClick={() => setIsMobileMenuOpen(false)}
-        className={`fixed inset-0 bg-black/70 backdrop-blur-sm z-40 transition-opacity duration-500 md:hidden ${
-          isMobileMenuOpen
+        className={`fixed inset-0 bg-black/70 backdrop-blur-sm z-40 transition-opacity duration-500 md:hidden ${isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
-        }`}
+          }`}
       />
 
       {/* ===== Sidebar Mobile (estilo navbar, flutuante) ===== */}
       <aside
-        className={`fixed top-4 bottom-4 right-4 w-[80%] max-w-[300px] rounded-3xl border border-white/10 bg-[#0A0A0A]/70 backdrop-blur-3xl z-50 flex flex-col overflow-hidden shadow-[0_0_50px_10px_rgba(37,99,235,0.15)] transition-all duration-500 ease-out md:hidden ${
-          isMobileMenuOpen
+        className={`fixed top-4 bottom-4 right-4 w-[80%] max-w-[300px] rounded-3xl border border-white/10 bg-[#0A0A0A]/70 backdrop-blur-3xl z-50 flex flex-col overflow-hidden shadow-[0_0_50px_10px_rgba(37,99,235,0.15)] transition-all duration-500 ease-out md:hidden ${isMobileMenuOpen
             ? "translate-x-0 opacity-100"
             : "translate-x-[110%] opacity-0 pointer-events-none"
-        }`}
+          }`}
       >
         {/* Glow decorativo no topo */}
         <div className="pointer-events-none absolute -top-24 -right-24 h-48 w-48 rounded-full bg-primary/25 blur-3xl" />
@@ -127,7 +125,7 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
 
         {/* Header da sidebar */}
         <div className="relative flex items-center justify-between px-5 pt-5 pb-4 border-b border-white/10">
-          <Image src="/assets/logo.png" alt="Logo" width={70} height={70} />
+          <Image src="/assets/logo.png" alt="Logo" width={70} height={70} className='h-auto' />
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(false)}
@@ -161,18 +159,16 @@ shadow-[0_8px_32px_rgba(0,0,0,0.25)] py-4 px-8 w-fit mx-auto mt-4 fixed top-0 le
                   <Link
                     href={`#${section.id}`}
                     onClick={handleMobileLinkClick}
-                    className={`group relative flex items-center gap-3 rounded-2xl px-4 py-3.5 font-medium text-[15px] transition-colors ${
-                      isActive
+                    className={`group relative flex items-center gap-3 rounded-2xl px-4 py-3.5 font-medium text-[15px] transition-colors ${isActive
                         ? "bg-white/[0.06] text-white"
                         : "text-white/60 hover:text-white hover:bg-white/[0.04]"
-                    }`}
+                      }`}
                   >
                     <span
-                      className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${
-                        isActive
+                      className={`h-1.5 w-1.5 rounded-full transition-all duration-300 ${isActive
                           ? "bg-primary scale-100"
                           : "bg-white/20 scale-75 group-hover:bg-white/40"
-                      }`}
+                        }`}
                     />
                     {section.label}
                     {isActive && (

@@ -4,6 +4,7 @@ import { InitialSection } from "./components/sections/InitialSection";
 import { ProblemSection } from "./components/sections/ProblemSection";
 
 export default function Home() {
+
   return (
     <main className='w-full'>
       <InitialSection />
