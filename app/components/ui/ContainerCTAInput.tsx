@@ -45,13 +45,15 @@ export const ContainerCTAInput: React.FC = () => {
         })
       })
 
-      if (!response.ok) {
-        throw new Error(`Response status: ${response.status}`)
-      } else {
-        toast.success('Você entrou na fila de espera! Em breve entraremos em contato.')
-      }
+    const data = await response.json();
 
-      const data = await response.json();
+    if (!response.ok) {
+      toast.error(data.error || 'Ocorreu um erro');
+      return;
+    } else {
+        toast.success('Você entrou na fila de espera! Em breve entraremos em contato.')
+    }
+
       console.log('data', data)
       setLead({
         id: 0,
