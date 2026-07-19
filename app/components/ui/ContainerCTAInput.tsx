@@ -75,13 +75,13 @@ export const ContainerCTAInput: React.FC = () => {
           e.preventDefault();
           postLead();
         }}
-        className="w-full flex flex-col md:flex-row min-w-0 items-stretch md:items-center gap-3 md:gap-4 rounded-2xl md:rounded-full bg-[rgba(255,255,255,0.05)] border border-white/10 p-2 md:px-2 md:py-2 shadow-inner backdrop-blur-sm max-w-full md:max-w-[620px]"
+        className="w-full flex flex-col md:flex-row min-w-0 items-stretch md:items-center gap-3 md:gap-4 rounded-2xl md:rounded-full md:bg-[rgba(255,255,255,0.05)] bg-transparent md:border md:border-white/10 p-2 md:px-2 md:py-2 shadow-inner backdrop-blur-sm max-w-full md:max-w-[620px]"
       >
         <input
           type="email"
           aria-label="Seu melhor e-mail institucional"
           placeholder="Seu melhor e-mail institucional"
-          className="min-w-0 flex-1 bg-transparent placeholder:text-white/60 text-white text-base md:text-lg outline-none px-4 py-3 md:py-2"
+          className="min-w-0 flex-1 md:bg-transparent bg-white/5 max-md:border max-md:border-white/10 rounded-2xl placeholder:text-white/60 text-white text-base md:text-lg outline-none px-4 py-3"
           value={lead.email}
           onChange={(e) => setLead({
             ...lead,

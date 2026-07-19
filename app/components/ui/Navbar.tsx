@@ -62,6 +62,7 @@ export const Navbar = () => {
           <Image
             src="/assets/logo.png"
             alt="Logo"
+            sizes="200px"
             fill
             className="object-contain"
           />
@@ -91,7 +92,7 @@ export const Navbar = () => {
 
       {/* ===== Navbar Mobile ===== */}
       <header className="flex md:hidden items-center justify-between rounded-full border border-white/10 bg-[#0A0A0A]/55 py-1.5 px-5 w-[92%] mx-auto mt-4 fixed top-0 left-0 right-0 backdrop-blur-3xl z-50 shadow-[0_0_30px_6px_rgba(37,99,235,0.10)]">
-        <Image src="/assets/logo.png" alt="Logo" width={90} height={90} className='h-auto' />
+        <Image src="/assets/logo.png" alt="Logo" width={90} height={90} sizes="200px" className='h-auto' />
 
         <button
           type="button"
